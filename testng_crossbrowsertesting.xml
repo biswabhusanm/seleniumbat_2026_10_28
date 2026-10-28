@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Automation Suite" parallel="tests" thread-count="2">
+
+    <test name="Run in chrome browser">
+      <parameter name="browser" value="chrome"></parameter>
+
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="parallel"/>-->
+
+<!--            </run>-->
+<!--        </groups>-->
+
+
+
+        <classes>
+<!--            <class name="com.testngdem.PracticalUsecaseOfAnnotation"/>-->
+            <class name="testngdem.AmazonSearch"/>
+<!--            <class name="com.testngdem.annotatinsDemo"/>-->
+        </classes>
+
+    </test>
+
+    <test name="run in edge browser">
+        <parameter name="browser" value="edge"></parameter>
+
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="parallel"/>-->
+
+<!--            </run>-->
+<!--        </groups>-->
+
+
+
+        <classes>
+            <!--            <class name="com.testngdem.PracticalUsecaseOfAnnotation"/>-->
+            <class name="testngdem.AmazonSearch"/>
+            <!--            <class name="com.testngdem.annotatinsDemo"/>-->
+        </classes>
+
+    </test>
+
+</suite>

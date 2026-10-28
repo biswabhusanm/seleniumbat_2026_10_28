@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Automation Suite">
+
+    <test name="selenium test suite">
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+
+            </run>
+        </groups>
+
+
+
+        <classes>
+<!--            <class name="com.testngdem.PracticalUsecaseOfAnnotation"/>-->
+            <class name="testngdem.AmazonSearch"/>
+<!--            <class name="com.testngdem.annotatinsDemo"/>-->
+        </classes>
+
+    </test>
+
+</suite>

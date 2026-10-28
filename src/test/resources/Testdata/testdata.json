@@ -1,0 +1,17 @@
+{
+  "name": "Sita",
+  "firstname": "Ram",
+  "lastname": "Garu",
+  "msg": "hi biswa",
+  "email": "abc@gmail.com",
+  "home": [
+    {
+      "road": "TUY",
+      "zip": "700008"
+    },
+    {
+      "road": "TUX",
+      "zip": "700061"
+    }
+  ]
+}

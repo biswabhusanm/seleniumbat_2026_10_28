@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Automation Suite" thread-count="3">
+    <listeners>
+        <listener class-name="testngdem.TestListener"></listener>
+        <listener class-name="dev.reportinglabs.testng.ReportingLabsListener"/>
+    </listeners>
+
+    <test name="selenium test suite">
+
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="smoke"/>-->
+<!--                <include name="regression"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+
+
+
+        <classes>
+<!--            <class name="com.testngdem.PracticalUsecaseOfAnnotation"/>-->
+            <class name="com.selenium.demo.GoogleAutoSuggestHandleTest"/>
+            <class name="com.selenium.demo.FillingFormDetails"/>
+<!--            <class name="com.testngdem.annotatinsDemo"/>-->
+        </classes>
+
+    </test>
+
+</suite>
