@@ -3,7 +3,7 @@ pipeline {
 
     triggers {
         // Uses the Jenkins controller's configured timezone.
-        cron('0 22 * * *')
+        cron('0 23 * * *')
     }
 
     options {
@@ -32,7 +32,7 @@ pipeline {
         }
         stage('Run Selenium TestNG suite') {
             steps {
-                bat 'mvn -B clean test'
+                bat 'mvn -B clean test -Dheadless=false'
             }
         }
     }
