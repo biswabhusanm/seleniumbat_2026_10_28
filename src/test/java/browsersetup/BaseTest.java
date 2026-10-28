@@ -33,10 +33,10 @@ import java.time.Duration;
         public void setUp() throws MalformedURLException {
             ChromeOptions options = new ChromeOptions();
             // (Optional) You can add arguments or capabilities if needed
-             options.addArguments("--headless"); // Example: run Chrome in headless mode
+            // options.addArguments("--headless"); // Example: run Chrome in headless mode
             // Initialize the RemoteWebDriver with Grid URL and Chrome options
-             driver = new RemoteWebDriver(new URL("http://192.168.0.9:4444"), options);
-            //driver=new ChromeDriver(options);
+            // driver = new RemoteWebDriver(new URL("http://192.168.0.9:4444"), options);
+            driver=new ChromeDriver(options);
             driver.get(ConfigReader.getProp("appUrl"));
           //  driver.manage().window().maximize();
             Utility util=new Utility(getDriver());
