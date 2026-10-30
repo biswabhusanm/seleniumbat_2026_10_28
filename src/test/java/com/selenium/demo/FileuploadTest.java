@@ -9,7 +9,7 @@ import utility.Utility;
 
 public class FileuploadTest extends BaseTest {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void enterUrl()
     {
         Utility util=new Utility(getDriver());
